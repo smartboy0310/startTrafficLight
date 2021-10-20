@@ -72,7 +72,7 @@ elStartBtn.addEventListener('click', () => {
 	startTrafficLight();
 	const stopInterval = setInterval(() => {
 		startTrafficLight();
-		if(timeCar === 1000) {
+		if(itemCar >= 940 && timeCar <= 1000) {
 			clearInterval(stopInterval);
 		}
 	}, 12000);
@@ -84,17 +84,17 @@ elStartBtn.addEventListener('click', () => {
 			clearInterval(stopCar);
 			timeCar = 0;
 		}
-		if(timeCar === 500 && elRed.style.backgroundColor === 'red' ){
+		if(timeCar >=470 && timeCar <= 550 && elRed.style.backgroundColor === 'red' ){
 			clearInterval(stopCar);
 		}
 				
-	}, 55);
+	}, 25);
 	
 	
 	
 })
 elRestartBtn.addEventListener('click', () => { 
-	if(timeCar === 500 && elGreen.style.backgroundColor === 'green'){
+	if(timeCar >=470 && timeCar <= 550 && elGreen.style.backgroundColor === 'green'){
 		const stopCar = setInterval(() => {
 		
 			timeCar++;
@@ -103,6 +103,6 @@ elRestartBtn.addEventListener('click', () => {
 				timeCar = 0;
 				clearInterval(stopCar);
 			}			
-		}, 55);
+		}, 25);
 	}
 })
