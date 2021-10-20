@@ -1,0 +1,25 @@
+.contianer {
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 40px;
+}
+.chorraxa {
+   display: flex;
+   flex-direction: column;
+   width: 60px;
+   height: 160px;
+   margin: 50px auto;
+   background-color: #000;
+}
+
+.red,
+.yellow,
+.green {
+   width: 40px;
+   height: 40px;
+   margin: 0 auto;
+   margin-top: 10px;
+   background-color: #fff;
+   border-radius: 50%;
+}
